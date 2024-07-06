@@ -36,10 +36,3 @@ if st.button("ASK",use_container_width=400):
         response = model.generate_content(persona + prompt)
         st.write(response.text)
 st.write("")  # Add a single line of space
-st.write("")  # Add a single line of space
-st.write("")  # Add a single line of space
-st.write("")  # Add a single line of space
-
-st.write("CONTACT")
-st.title("For any inquiries please email")
-st.subheader("hokentechitalia@gmail.com")
