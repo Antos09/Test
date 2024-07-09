@@ -13,7 +13,7 @@ with rectangle_col:
     # Add the 300x300 pixel rectangle
     rectangle_container.markdown(
         """
-        <div style="width: 300px; height: 300px; background-color: #f0f0f0; border: 1px solid #ccc; position: fixed; top: 0; right: 0; z-index: 1000;">
+        <div style="width: 0px; height: 0px; background-color: #f0f0f0; border: 1px solid #ccc; position: fixed; top: 0; right: 0; z-index: 1000;">
         </div>
         """,
         unsafe_allow_html=True
