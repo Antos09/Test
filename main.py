@@ -1,5 +1,13 @@
 import streamlit as st
 import google.generativeai as genai
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 # Add this at the beginning of your script
 st.set_page_config(layout="wide")
 
