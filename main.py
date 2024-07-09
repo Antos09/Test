@@ -1,6 +1,23 @@
 import streamlit as st
 import google.generativeai as genai
+# Add this at the beginning of your script
+st.set_page_config(layout="wide")
 
+# Create a container for the rectangle
+rectangle_container = st.container()
+
+# Create two columns, one for the main content and one for the rectangle
+main_col, rectangle_col = st.columns([3, 1])
+
+with rectangle_col:
+    # Add the 300x300 pixel rectangle
+    rectangle_container.markdown(
+        """
+        <div style="width: 300px; height: 300px; background-color: #f0f0f0; border: 1px solid #ccc; position: fixed; top: 0; right: 0; z-index: 1000;">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 api_key= st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
