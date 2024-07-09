@@ -1,5 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
+# Add this at the beginning of your script
+st.set_page_config(layout="wide")
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -8,8 +10,6 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
-# Add this at the beginning of your script
-st.set_page_config(layout="wide")
 
 # Create a container for the rectangle
 rectangle_container = st.container()
